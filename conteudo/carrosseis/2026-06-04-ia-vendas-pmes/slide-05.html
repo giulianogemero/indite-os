@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 05 — Insight 4</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: flex-start;
+    padding: 90px 100px;
+  }
+  .tag {
+    font-size: 16px; font-weight: 600; letter-spacing: 3px;
+    color: #00ff88; text-transform: uppercase; margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 58px; font-weight: 800; color: #ffffff; line-height: 1.15;
+    margin-bottom: 56px;
+  }
+  h2 span { color: #00ff88; }
+  .tools-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%;
+  }
+  .tool-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 30px 28px;
+  }
+  .tool-name {
+    font-size: 24px; font-weight: 700; color: #ffffff; margin-bottom: 8px;
+  }
+  .tool-use {
+    font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 16px;
+    line-height: 1.4;
+  }
+  .tool-price {
+    display: inline-block;
+    background: rgba(0,255,136,0.12);
+    border: 1px solid rgba(0,255,136,0.3);
+    border-radius: 100px;
+    padding: 6px 18px;
+    font-size: 16px; font-weight: 700; color: #00ff88;
+  }
+  .bottom-note {
+    margin-top: 36px;
+    font-size: 20px; color: rgba(255,255,255,0.45);
+    line-height: 1.5;
+  }
+  .bottom-note strong { color: #ffffff; }
+  .brand {
+    position: absolute; bottom: 44px; right: 60px;
+    font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.25);
+  }
+  .slide-num {
+    position: absolute; bottom: 44px; left: 60px;
+    font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="tag">Ferramentas acessíveis</div>
+  <h2>Não precisa de<br>orçamento grande.<br><span>Precisa de escolha certa.</span></h2>
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-name">HubSpot AI</div>
+      <div class="tool-use">CRM + automação de email + lead scoring</div>
+      <div class="tool-price">a partir de $15/mês</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Pipedrive</div>
+      <div class="tool-use">Pipeline visual + IA para previsão de vendas</div>
+      <div class="tool-price">a partir de $15/mês</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Freshsales</div>
+      <div class="tool-use">Atendimento + vendas integrados com IA</div>
+      <div class="tool-price">a partir de $18/mês</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">ChatGPT / Claude</div>
+      <div class="tool-use">Criação de conteúdo, scripts de venda, respostas</div>
+      <div class="tool-price">$20/mês</div>
+    </div>
+  </div>
+  <div class="bottom-note">Menos de <strong>R$ 300/mês</strong> para automatizar o que antes exigia um time inteiro.</div>
+  <div class="slide-num">05 / 07</div>
+  <div class="brand">Indite</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 03 — Insight 2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: flex-start;
+    padding: 90px 100px;
+  }
+  .tag {
+    font-size: 16px; font-weight: 600; letter-spacing: 3px;
+    color: #00ff88; text-transform: uppercase; margin-bottom: 48px;
+  }
+  h2 {
+    font-size: 64px; font-weight: 800; color: #ffffff; line-height: 1.15;
+    margin-bottom: 48px;
+  }
+  h2 span { color: #00ff88; }
+  .cards {
+    display: flex; flex-direction: column; gap: 24px; width: 100%;
+  }
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 4px solid #00ff88;
+    border-radius: 12px;
+    padding: 28px 36px;
+    display: flex; align-items: center; gap: 28px;
+  }
+  .card-icon {
+    font-size: 36px; flex-shrink: 0;
+  }
+  .card-text {
+    font-size: 22px; font-weight: 500; color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+  }
+  .card-text strong { color: #00ff88; }
+  .brand {
+    position: absolute; bottom: 44px; right: 60px;
+    font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.25);
+  }
+  .slide-num {
+    position: absolute; bottom: 44px; left: 60px;
+    font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="tag">O follow-up que você esquece</div>
+  <h2>A IA faz o<br>acompanhamento<br><span>que você não faz</span></h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">📩</div>
+      <div class="card-text"><strong>Email automático</strong> 30 min após o lead entrar — sem você levantar um dedo</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔁</div>
+      <div class="card-text"><strong>Sequência de follow-up</strong> programada por comportamento: abriu? clicou? comprou?</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⏱️</div>
+      <div class="card-text">Vendedores economizam até <strong>5 horas por semana</strong> com automação de tarefas repetitivas</div>
+    </div>
+  </div>
+  <div class="slide-num">03 / 07</div>
+  <div class="brand">Indite</div>
+</body>
+</html>

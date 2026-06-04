@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 04 — Insight 3</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: flex-start;
+    padding: 90px 100px;
+  }
+  .tag {
+    font-size: 16px; font-weight: 600; letter-spacing: 3px;
+    color: #00ff88; text-transform: uppercase; margin-bottom: 48px;
+  }
+  h2 {
+    font-size: 60px; font-weight: 800; color: #ffffff; line-height: 1.15;
+    margin-bottom: 56px;
+  }
+  h2 span { color: #00ff88; }
+  .vs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 100%;
+  }
+  .vs-col {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    padding: 36px 32px;
+  }
+  .vs-col.green {
+    background: rgba(0,255,136,0.06);
+    border-color: rgba(0,255,136,0.25);
+  }
+  .vs-label {
+    font-size: 14px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 24px;
+  }
+  .vs-col .vs-label { color: rgba(255,255,255,0.35); }
+  .vs-col.green .vs-label { color: #00ff88; }
+  .vs-item {
+    font-size: 20px; font-weight: 500; color: rgba(255,255,255,0.7);
+    line-height: 1.5; margin-bottom: 16px; padding-left: 20px;
+    position: relative;
+  }
+  .vs-item::before {
+    content: '✗';
+    position: absolute; left: 0;
+    color: rgba(255,80,80,0.7);
+    font-weight: 700;
+  }
+  .vs-col.green .vs-item::before {
+    content: '✓';
+    color: #00ff88;
+  }
+  .brand {
+    position: absolute; bottom: 44px; right: 60px;
+    font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.25);
+  }
+  .slide-num {
+    position: absolute; bottom: 44px; left: 60px;
+    font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="tag">Lead scoring com IA</div>
+  <h2>Pare de ligar<br>pra quem <span>não vai comprar</span></h2>
+  <div class="vs-grid">
+    <div class="vs-col">
+      <div class="vs-label">Sem IA</div>
+      <div class="vs-item">Ligações aleatórias para toda a lista</div>
+      <div class="vs-item">Tempo gasto com leads frios</div>
+      <div class="vs-item">Pipeline sem prioridade</div>
+    </div>
+    <div class="vs-col green">
+      <div class="vs-label">Com IA</div>
+      <div class="vs-item">Score de propensão por comportamento</div>
+      <div class="vs-item">Foco nos leads quentes automaticamente</div>
+      <div class="vs-item">Previsão de qual deal vai fechar</div>
+    </div>
+  </div>
+  <div class="slide-num">04 / 07</div>
+  <div class="brand">Indite</div>
+</body>
+</html>

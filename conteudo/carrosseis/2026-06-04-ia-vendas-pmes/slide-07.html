@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 07 — CTA</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    padding: 80px;
+    position: relative;
+  }
+  .bg-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .icon {
+    font-size: 80px; margin-bottom: 32px; position: relative;
+  }
+  .cta-main {
+    font-size: 72px; font-weight: 900; color: #00ff88; line-height: 1;
+    margin-bottom: 24px; position: relative;
+    letter-spacing: -2px;
+  }
+  .cta-sub {
+    font-size: 28px; font-weight: 500; color: rgba(255,255,255,0.7);
+    margin-bottom: 60px; position: relative; line-height: 1.4;
+  }
+  .divider {
+    width: 80px; height: 3px; background: rgba(255,255,255,0.15);
+    margin: 0 auto 48px; border-radius: 2px; position: relative;
+  }
+  .actions {
+    display: flex; gap: 20px; position: relative; margin-bottom: 56px;
+  }
+  .action-btn {
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-size: 22px; font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: #00ff88; color: #0a0a0a;
+  }
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+  }
+  .brand-block {
+    position: relative;
+  }
+  .brand-name {
+    font-size: 28px; font-weight: 800; color: rgba(255,255,255,0.9);
+    letter-spacing: 1px; margin-bottom: 6px;
+  }
+  .brand-tagline {
+    font-size: 17px; color: rgba(255,255,255,0.3); letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .slide-num {
+    position: absolute; bottom: 44px; left: 60px;
+    font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="icon">🔖</div>
+  <div class="cta-main">Salva esse post.</div>
+  <p class="cta-sub">Você vai precisar disso quando for<br>escolher sua primeira ferramenta de IA.</p>
+  <div class="divider"></div>
+  <div class="actions">
+    <div class="action-btn btn-primary">Salvar agora</div>
+    <div class="action-btn btn-secondary">Compartilhar</div>
+  </div>
+  <div class="brand-block">
+    <div class="brand-name">Indite</div>
+    <div class="brand-tagline">Strategic Growth para PMEs</div>
+  </div>
+  <div class="slide-num">07 / 07</div>
+</body>
+</html>

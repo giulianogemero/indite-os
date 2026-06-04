@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>Slide 01 — Hook</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    padding: 80px;
+  }
+  .tag {
+    font-size: 18px; font-weight: 600; letter-spacing: 3px;
+    color: #00ff88; text-transform: uppercase; margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 72px; font-weight: 800; line-height: 1.1;
+    color: #ffffff; margin-bottom: 40px;
+  }
+  h1 span { color: #00ff88; }
+  .sub {
+    font-size: 26px; font-weight: 400; color: rgba(255,255,255,0.6);
+    line-height: 1.5; max-width: 820px;
+  }
+  .stat-bar {
+    margin-top: 60px;
+    display: flex; gap: 20px; align-items: center;
+  }
+  .stat-pill {
+    background: rgba(0,255,136,0.1);
+    border: 1px solid rgba(0,255,136,0.3);
+    border-radius: 100px;
+    padding: 12px 28px;
+    font-size: 20px; font-weight: 700; color: #00ff88;
+  }
+  .brand {
+    position: absolute; bottom: 44px; right: 60px;
+    font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.25);
+    letter-spacing: 1px;
+  }
+  .slide-num {
+    position: absolute; bottom: 44px; left: 60px;
+    font-size: 18px; font-weight: 600; color: rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+  }
+  .accent-line {
+    width: 64px; height: 4px; background: #00ff88; margin: 0 auto 40px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="tag">Inteligência Artificial + PMEs</div>
+  <div class="accent-line"></div>
+  <h1>75% das PMEs<br>já usam IA.<br><span>A sua ainda não?</span></h1>
+  <p class="sub">Enquanto você hesita, seus concorrentes estão fechando o dobro de vendas com as mesmas horas de trabalho.</p>
+  <div class="stat-bar">
+    <div class="stat-pill">2025</div>
+    <div class="stat-pill">IA para Vendas</div>
+    <div class="stat-pill">PMEs</div>
+  </div>
+  <div class="slide-num">01 / 07</div>
+  <div class="brand">Indite</div>
+</body>
+</html>
